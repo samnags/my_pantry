@@ -29,31 +29,6 @@ const IngredientTable = (props) => {
             onClick={props.onClick}
             />
         </Col>
-
-      // <Col xs={6} md={4}>
-      // {props.location}
-      // <Table bordered condensed responsive={true} >
-      //   <thead>
-      //     <tr>
-      //       <th>
-      //         Quantity
-      //       </th>
-      //       <th>
-      //         Measurement
-      //       </th>
-      //       <th>
-      //         Ingredient
-      //       </th>
-      //       <th>
-      //         Category
-      //       </th>
-      //     </tr>
-      //   </thead>
-      //   <tbody>
-      //     {tableRows}
-      //   </tbody>
-      // </Table>
-      // </Col>
     )
   }
 

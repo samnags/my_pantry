@@ -6,15 +6,14 @@ import { Form, Button, FormGroup, FormControl, FieldGroup, ControlLabel } from '
 class editIngredient extends Component {
   constructor(props) {
     super(props)
-
     this.state = {
       ingredientInfo: {
-        id: this.props.ingredient.pi.id,
-        quantity: this.props.ingredient.quantity,
-        measurement: this.props.ingredient.measurement,
-        ingredient: this.props.ingredient.ingredient,
-        currentPantry: this.props.currentpantry,
-        category: this.props.ingredient.category }}
+        id: '',
+        quantity: '',
+        measurement: '',
+        ingredient: '',
+        currentPantry: '',
+        category: '' }}
 
     this.onIngredientChange = this.onIngredientChange.bind(this)
     this.onIngredientSubmit = this.onIngredientSubmit.bind(this)
@@ -25,6 +24,20 @@ class editIngredient extends Component {
   componentDidMount() {
     this.props.getCategories()
     this.props.getMeasurements()
+  }
+
+  componentWillReceiveProps() {
+    if (this.props.ingredient) {
+      this.setState({
+        ingredientInfo: {
+          id: this.props.ingredient.pi.id,
+          quantity: this.props.ingredient.quantity,
+          measurement: this.props.ingredient.measurement,
+          ingredient: this.props.ingredient.ingredient,
+          currentPantry: this.props.currentpantry,
+          category: this.props.ingredient.category }
+      })
+    }
   }
 
   onIngredientCancel() {
@@ -66,8 +79,8 @@ class editIngredient extends Component {
     return(
       <div>
         <h2>Edit an Ingredient</h2>
-        <form onSubmit={this.onIngredientSubmit}>
-        <Form inline controlId="formBasicText">
+        {/* <form > */}
+        <Form inline onSubmit={this.onIngredientSubmit}>
           <ControlLabel>Quantity</ControlLabel>
            {' '}
           <FormControl
@@ -115,31 +128,9 @@ class editIngredient extends Component {
           <Button type="submit">
             Submit
           </Button>
+        </Form>
+        {/* </form> */}
 
-          </Form>
-        </form>
-
-
-
-          {/* <label>Quantity</label>
-          <input type="number" min="0" placeholder="Quantity" name="quantity" value={this.state.ingredientInfo.quantity} onChange={this.onIngredientChange} />
-
-          <label>Measurement</label>
-            <select name="measurement" onChange={this.onIngredientChange} value={this.state.ingredientInfo.measurement}>
-              <option key='Nothing' value='Nothing'>--</option>
-              {this.renderMeasurements()}
-            </select>
-
-          <label>Name</label>
-          <input type="text" placeholder="Ingredient" name="ingredient" value={this.state.ingredientInfo.ingredient} onChange={this.onIngredientChange} />
-
-          <label>Category</label>
-            <select name="category" onChange={this.onIngredientChange} value={this.state.ingredientInfo.category}>
-              <option key='Nothing' value='Nothing'>--</option>
-              {this.renderCategories()}
-            </select>
-          <input type="submit"/>
-        </form> */}
         <Button bsStyle="danger" onClick={this.onIngredientDelete}>Delete</Button>
         <Button bsStyle="warning" onClick={this.onIngredientCancel}>Cancel</Button>
       </div>

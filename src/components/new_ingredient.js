@@ -47,7 +47,7 @@ class newIngredient extends Component {
       <div>
         <h2>Add an Ingredient</h2>
         <form onSubmit={this.onIngredientSubmit}>
-        <Form inline controlId="formBasicText">
+        <Form inline>
           <ControlLabel>Quantity</ControlLabel>
            {' '}
           <FormControl
