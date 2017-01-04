@@ -4,7 +4,7 @@ import { browserHistory } from 'react-router'
 export function addPantry(formData) {
   return function(dispatch) {
     $.ajax({
-      url: 'http://localhost:3000/pantries',
+      url: 'https://my-pantry-api.herokuapp.com/pantries',
       type: 'POST',
       data: JSON.stringify({ pantry: {location: formData.pantryName}}),
       contentType:"application/json; charset=utf-8",
@@ -20,7 +20,7 @@ export function addPantry(formData) {
 export function fetchPantries() {
   return function(dispatch) {
     $.ajax({
-      url: `http://localhost:3000/pantries/`,
+      url: `https://my-pantry-api.herokuapp.com/pantries/`,
       type: 'GET',
       contentType:"application/json; charset=utf-8",
       datatype: 'json',
@@ -34,7 +34,7 @@ export function fetchPantries() {
 export function fetchPantry(id) {
   return function(dispatch) {
     $.ajax({
-      url: `http://localhost:3000/pantries/${id}`,
+      url: `https://my-pantry-api.herokuapp.com/pantries/${id}`,
       type: 'GET',
       contentType:"application/json; charset=utf-8",
       datatype: 'json',

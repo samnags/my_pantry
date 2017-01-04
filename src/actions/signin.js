@@ -4,7 +4,7 @@ import { browserHistory } from 'react-router'
 export function signUp(formData) {
   return function(dispatch) {
     $.ajax({
-      url: 'http://localhost:3000/users',
+      url: 'https://my-pantry-api.herokuapp.com/users',
       type: 'POST',
       data: JSON.stringify({user: {name: formData.name, email: formData.email, password: formData.password}}),
       contentType:"application/json; charset=utf-8",
@@ -20,7 +20,7 @@ export function signUp(formData) {
 export function login(formData) {
   return function(dispatch) {
     $.ajax({
-      url: 'http://localhost:3000/login',
+      url: 'https://my-pantry-api.herokuapp.com/login',
       type: 'POST',
       data: JSON.stringify({user: {email: formData.email, password: formData.password}}),
       contentType:"application/json; charset=utf-8",

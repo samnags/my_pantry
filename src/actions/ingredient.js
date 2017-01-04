@@ -5,7 +5,7 @@ export function addIngredient(formData) {
   return function(dispatch) {
     dispatch({type: 'ADD_INGREDIENT'})
     $.ajax({
-      url: 'http://localhost:3000/pantryingredients',
+      url: 'https://my-pantry-api.herokuapp.com/pantryingredients',
       type: 'POST',
       data: JSON.stringify({currentPantry: formData.currentPantry, quantity: formData.quantity, measurement: formData.measurement, ingredient: formData.ingredient, category: formData.category}),
       contentType:"application/json; charset=utf-8",
@@ -22,7 +22,7 @@ export function updateIngredient(formData) {
   return function(dispatch) {
     dispatch({type: 'EDIT_INGREDIENT'})
     $.ajax({
-      url: `http://localhost:3000/pantryingredients/${formData.id}`,
+      url: `https://my-pantry-api.herokuapp.com/pantryingredients/${formData.id}`,
       type: 'PATCH',
       data: JSON.stringify({id: formData.id, currentPantry: formData.currentPantry, quantity: formData.quantity, measurement: formData.measurement, ingredient: formData.ingredient, category: formData.category}),
       contentType:"application/json; charset=utf-8",
@@ -40,7 +40,7 @@ export function deleteIngredient(id) {
   return function(dispatch) {
     dispatch({type: 'DELETE_INGREDIENT'})
     $.ajax({
-      url: `http://localhost:3000/pantryingredients/${id}`,
+      url: `https://my-pantry-api.herokuapp.com/pantryingredients/${id}`,
       type: 'DELETE',
       contentType:"application/json; charset=utf-8",
       datatype: 'json',
@@ -57,7 +57,7 @@ export function fetchIngredient(pantry, ingredient) {
   return function(dispatch) {
     dispatch({type: 'EDIT_INGREDIENT_FORM'})
     $.ajax({
-      url: `http://localhost:3000/pantryingredients/find`,
+      url: `https://my-pantry-api.herokuapp.com/pantryingredients/find`,
       type: 'GET',
       data: {pantry: pantry, ingredient: ingredient},
       contentType:"application/json; charset=utf-8",
@@ -72,7 +72,7 @@ export function fetchIngredient(pantry, ingredient) {
 export function getCategories() {
   return function(dispatch) {
     $.ajax({
-      url: 'http://localhost:3000/categories',
+      url: 'https://my-pantry-api.herokuapp.com/categories',
       type: 'GET',
       contentType:"application/json; charset=utf-8",
       datatype: 'json',
@@ -86,7 +86,7 @@ export function getCategories() {
 export function getMeasurements() {
   return function(dispatch) {
     $.ajax({
-      url: 'http://localhost:3000/measurements',
+      url: 'https://my-pantry-api.herokuapp.com/measurements',
       type: 'GET',
       contentType:"application/json; charset=utf-8",
       datatype: 'json',
@@ -114,7 +114,7 @@ export function toggleEditIngredientForm() {
 export function fetchPantryIngredients(id) {
   return function(dispatch) {
     $.ajax({
-      url: `http://localhost:3000/pantries/${id}/ingredients`,
+      url: `https://my-pantry-api.herokuapp.com/pantries/${id}/ingredients`,
       type: 'GET',
       contentType:"application/json; charset=utf-8",
       datatype: 'json',
