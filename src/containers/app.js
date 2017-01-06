@@ -17,11 +17,11 @@ class App extends Component {
           <img src={logo} alt="Logo" className="logo" />
         </div>
 
-        {/* <div className="login-button" >
+        <div className="login-button" >
           <div className="button-text">
             LOG IN
           </div>
-        </div> */}
+        </div>
 
           <div className="signup-button">
             <div className="button-text">

@@ -41,7 +41,7 @@ class Pantry extends Component {
       <div>
         <Button onClick={this.handleAddClick.bind(this)}>Add an Ingredient</Button>
         { this.props.addIngredientForm ? <NewIngredient currentPantry={this.props.currentPantry} /> : null }
-        { this.props.editIngredientForm ? <EditIngredient ingredient={this.props.editIngredient}  currentPantry={this.props.currentPantry} /> : null }
+        { this.props.editIngredientForm ? <EditIngredient ingredient={this.props.editIngredient} currentPantry={this.props.currentPantry} /> : null }
         <IngredientTable
           id={this.props.params.id}
           ingredients={this.props.ingredients}
