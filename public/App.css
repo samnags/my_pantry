@@ -8,10 +8,6 @@ body {
   background-color: #ed7e6e;
 }
 
-/*.container {
-  margin: 40px auto 0 auto;
-}*/
-
 .row {
   max-width: 1140px;
   margin: 0 auto;
@@ -47,6 +43,13 @@ body {
 .buttons {
   /*padding-top: 90px;*/
   padding: 5%;
+}
+
+a.button,
+a.button:active,
+a.button:focus,
+a.button:hover {
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 720px) {
