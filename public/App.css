@@ -8,16 +8,45 @@ body {
   background-color: #ed7e6e;
 }
 
-.container {
+/*.container {
   margin: 40px auto 0 auto;
+}*/
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 .helloPantry {
-  padding-bottom: 30px;
+  padding: 30px;
+  /*padding-top: 30px;
+  padding-bottom: 30px;*/
+  width: 100%;
 }
 
+.logo {
+  width: 70%;
+}
 
-@media(min-width: 1000px) {
+.button-box {
+  width: 40%;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.button {
+  font-family: "Chalkboard SE";
+  color: rgb(237, 126, 110);
+  font-size: 30px;
+}
+
+.buttons {
+  padding-top: 90px;
+}
+
+/*@media(min-width: 1000px) {
   .logo {
     width: 80%;
   }
@@ -47,7 +76,7 @@ body {
   .logo {
     width: 60%;
   }
-}
+}*/
 
 /*.center {
   position: absolute;
@@ -121,14 +150,6 @@ transform: translate(-50%, -50%);
 height: 200px;*/
 
 
-.button {
-  display: inline-block;
-  border-radius: 10px;
-  background-color: rgb(255, 255, 255);
-  /*margin-right: 40px;*/
-  font-family: "Chalkboard SE";
-  color: rgb(237, 126, 110);
-}
 
 /*.login-button {
   border-radius: 10px;

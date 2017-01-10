@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import GuestHeader from '../components/guest_header'
 import LoggedInHeader from '../components/logged_in_header'
 import '../../public/App.css'
+import '../../public/grid.css'
 import logo from '../../images/HelloPantryRound_T.png'
 import helloPantry from '../../images/helloPantry.png'
 import { Grid, Row, Col, Image } from 'react-bootstrap'
@@ -13,22 +14,30 @@ class App extends Component {
       <div>
         {/* {this.props.logged_in ? <LoggedInHeader /> : <GuestHeader /> } */}
         {this.props.children}
-        <Grid>
-          <Row>
-            <Col md={4} mdPush={2}>
+
+        <div className="section group">
+          <div className="row">
+            <div className="col span-1-of-2">
               <img className="helloPantry" src={helloPantry} alt="HelloPantry"/>
-            </Col>
-          </Row>
+            </div>
+          </div>
 
-          <Row>
-            <Col className="center" md={4} mdOffset={4}>
+          <div className="row">
+            <div className="col span-1-of-2">
               <img className="logo" src={logo} alt="Logo" />
-            </Col>
-          </Row>
+            </div>
 
+            <div className="col span-1-of-2 buttons">
+              <div className="button-box">
+                <a href="#" className="button">LOG IN</a>
+              </div>
+              <div className="button-box">
+                <a href="#" className="button">SIGN UP</a>
+              </div>
 
-
-        </Grid>
+            </div>
+          </div>
+        </div>
 
 
 
