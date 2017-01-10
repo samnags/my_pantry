@@ -14,8 +14,8 @@ import NewIngredient from './components/new_ingredient'
 
 const Routes = (
   <Route path="/" component={App}>
-    <Route path="/home" component={HomeScreen} />
-    <Route path="/profile" component={Home} />
+    <IndexRoute component={HomeScreen} />
+    <Route path="/home" component={Home} />    
     <Route path="/signup" component={SignUp} />
     <Route path="/login" component={Login} />
     <Route path="/newpantry" component={NewPantry} />
