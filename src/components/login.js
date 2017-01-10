@@ -25,7 +25,7 @@ class Login extends Component {
     this.props.login(this.state.credentials)
   }
 
-  render() {
+  render() {    
     return (
       <div>
         <form onSubmit={this.handleClick}>
