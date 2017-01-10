@@ -6,7 +6,6 @@ import '../../public/App.css'
 import '../../public/grid.css'
 import logo from '../../images/HelloPantryRound_T.png'
 import helloPantry from '../../images/helloPantry.png'
-import { Grid, Row, Col, Image } from 'react-bootstrap'
 
 class App extends Component {
   render() {
