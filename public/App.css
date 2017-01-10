@@ -29,7 +29,7 @@ body {
 }
 
 .button-box {
-  width: 40%;
+  width: 170px;
   background-color: rgb(255, 255, 255);
   padding: 20px;
   border-radius: 10px;
@@ -40,11 +40,35 @@ body {
   font-family: "Chalkboard SE";
   color: rgb(237, 126, 110);
   font-size: 30px;
+  position: relative;
+  margin-left: 5px;
 }
 
 .buttons {
-  padding-top: 90px;
+  /*padding-top: 90px;*/
+  padding: 5%;
 }
+
+@media only screen and (max-width: 720px) {
+  .span-2-of-2 {
+		width: 100% !important;
+	}
+	.span-1-of-2 {
+		width: 100% !important;
+	}
+
+  .logo {
+    width: 60%;
+    padding-left: 30px;
+  }
+
+  .helloPantry {
+    width: 80%;
+  }
+}
+
+
+
 
 /*@media(min-width: 1000px) {
   .logo {
