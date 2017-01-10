@@ -5,7 +5,6 @@ import '../../public/grid.css'
 
 export default class App extends Component {
   render() {
-    console.log("app loaded")
     return (
       <div>
         {this.props.children}

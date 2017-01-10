@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { login } from '../actions/signin'
+import { Modal, Button } from 'react-bootstrap'
+
 
 class Login extends Component {
   constructor(props) {
@@ -25,9 +27,9 @@ class Login extends Component {
     this.props.login(this.state.credentials)
   }
 
-  render() {    
+  render() {
     return (
-      <div>
+      <div>      
         <form onSubmit={this.handleClick}>
           <label>Email</label>
           <input type="text" placeholder="email" name="email" onChange={this.onChange} value={this.state.credentials.email} />

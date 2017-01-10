@@ -4,12 +4,36 @@ import '../../public/App.css'
 import '../../public/grid.css'
 import logo from '../../images/HelloPantryRound_T.png'
 import helloPantry from '../../images/helloPantry.png'
-import { Link } from 'react-router'
-
+import Login from '../components/login'
+import SignUp from '../components/sign_up'
 
 class HomeScreen extends Component {
+  constructor() {
+    super()
+
+    this.state = {
+      login: false,
+      signup: false
+    }
+
+    this.loginClick = this.loginClick.bind(this)
+    this.signUpClick = this.signUpClick.bind(this)
+
+  }
+
+  loginClick() {
+    this.setState(
+      { login: !this.state.login }
+    )
+  }
+
+  signUpClick() {
+    this.setState(
+      { signup: !this.state.signup }
+    )
+  }
+
   render() {
-    console.log("homescreen loaded")
     return (
       <div>
         <div className="section group">
@@ -26,11 +50,16 @@ class HomeScreen extends Component {
 
             <div className="col span-1-of-2 buttons">
               <div className="button-box">
-                <Link to='/login' className="button">LOGIN</Link>
+                <a href="#" className="button" onClick={this.loginClick}>LOGIN</a>
               </div>
+
+              {this.state.login ? <Login /> : null }
+
               <div className="button-box">
-                <Link to='/signup' className="button">SIGN UP</Link>
+                <a href="#" className="button" onClick={this.signUpClick}>SIGN UP</a>
               </div>
+
+              {this.state.signup ? <SignUp /> : null }
             </div>
           </div>
         </div>
