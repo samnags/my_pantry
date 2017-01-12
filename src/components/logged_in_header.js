@@ -6,6 +6,7 @@ import { Navbar, Nav, NavItem } from 'react-bootstrap'
 import { LinkContainer, IndexLinkContainer } from 'react-router-bootstrap'
 import { Link } from 'react-router'
 import '../../public/app.css'
+import logo from '../../images/HelloPantryRound_T.png'
 
 class LoggedInHeader extends Component {
   constructor(props) {
@@ -39,30 +40,48 @@ class LoggedInHeader extends Component {
     }
 
     return(
-      <div>
-      <Navbar className="main">
-        <Navbar.Header>
-          <Navbar.Brand>
-            <Link to='/home'>My Pantry</Link>
-          </Navbar.Brand>
-        </Navbar.Header>
-        <Nav>
-          <LinkContainer to='/newpantry'>
-            <NavItem>Add a Pantry</NavItem>
-          </LinkContainer>
-          <IndexLinkContainer to='/'>
-            <NavItem onClick={this.logout}>Log Out</NavItem>
-          </IndexLinkContainer>
-        </Nav>
-      </Navbar>
-
-      <Navbar className="sub">
-        <Nav>
-          {this.renderPantries()}
-        </Nav>
-      </Navbar>
+      <div className="section group header">
+        <div className="row flush-left">
+          <div className="col span-1-of-4">
+            <Link to='/home'><img className="header-logo" src={logo} alt="Logo" /></Link>
+          </div>
+          <div className="col span-2-of-4">
+              <Link className="header-link" to='/newpantry'>ADD A PANTRY</Link>
+          </div>
+          <div className="col span-1-of-4">
+              <a href="#" className="header-link" onClick={this.logout}>LOG OUT</a>
+          </div>
+        </div>
       </div>
     )
+
+
+
+
+      // <div>
+      // <Navbar className="main">
+      //   <Navbar.Header>
+      //     <Navbar.Brand>
+      //       <Link to='/home'>My Pantry</Link>
+      //     </Navbar.Brand>
+      //   </Navbar.Header>
+      //   <Nav>
+      //     <LinkContainer to='/newpantry'>
+      //       <NavItem>Add a Pantry</NavItem>
+      //     </LinkContainer>
+      //     <IndexLinkContainer to='/'>
+      //       <NavItem onClick={this.logout}>Log Out</NavItem>
+      //     </IndexLinkContainer>
+      //   </Nav>
+      // </Navbar>
+      //
+      // <Navbar className="sub">
+      //   <Nav>
+      //     {this.renderPantries()}
+      //   </Nav>
+      // </Navbar>
+      // </div>
+
   }
 }
 
