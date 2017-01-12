@@ -114,6 +114,10 @@ a.button:hover {
   text-decoration: none;
 }
 
+.pantries {
+  margin: 0 20px !important;
+}
+
 .pantrycard {
   padding: 10px;
   border: 4px;
@@ -121,7 +125,8 @@ a.button:hover {
   border-color: rgb(237, 126, 110);
   margin: 10px;
   width: 25%;
-  text-align:center
+  text-align:center;
+  border-radius: 10px;
 }
 
 .pantryname {

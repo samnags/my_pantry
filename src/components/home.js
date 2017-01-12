@@ -24,9 +24,9 @@ class Home extends Component {
       }
 
     return(
-      <div>      
+      <div>
         {this.props.children}
-        {pantries}
+        <div className="section group pantries">{pantries}</div>
       </div>
     )
   }
