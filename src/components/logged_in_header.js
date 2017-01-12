@@ -43,13 +43,13 @@ class LoggedInHeader extends Component {
       <div className="section group header">
         <div className="row flush-left">
           <div className="col span-1-of-4">
-              <img className="header-logo" src={logo} alt="Logo" />
+            <Link to='/home'><img className="header-logo" src={logo} alt="Logo" /></Link>
           </div>
           <div className="col span-2-of-4">
               <Link className="header-link" to='/newpantry'>ADD A PANTRY</Link>
           </div>
           <div className="col span-1-of-4">
-              Log Out
+              <a href="#" className="header-link" onClick={this.logout}>LOG OUT</a>
           </div>
         </div>
       </div>

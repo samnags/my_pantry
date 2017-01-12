@@ -53,13 +53,14 @@ body {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: 30px;
-
+  line-height: 4.0;
 }
 
 .header-link:active,
 .header-link:focus,
 .header-link:hover {
   text-decoration: none;
+  /*color: rgb(255, 255, 255);*/
 }
 
 

@@ -40,5 +40,6 @@ export function logout() {
   localStorage.removeItem('jwt');
   return function(dispatch) {
     dispatch({type: 'LOG_OUT'})
+    browserHistory.push('/')
   }
 }
