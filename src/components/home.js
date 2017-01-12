@@ -5,6 +5,11 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { fetchPantries } from '../actions/pantry'
 import PantryCard from './pantry_card'
+import '../../public/app.css'
+import '../../public/home.css'
+import '../../public/grid.css'
+
+
 
 class Home extends Component {
   componentWillMount() {
