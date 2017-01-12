@@ -5,7 +5,6 @@ import { connect } from 'react-redux'
 import { Navbar, Nav, NavItem } from 'react-bootstrap'
 import { LinkContainer, IndexLinkContainer } from 'react-router-bootstrap'
 import { Link } from 'react-router'
-import '../../public/app.css'
 import logo from '../../images/HelloPantryRound_T.png'
 
 class LoggedInHeader extends Component {

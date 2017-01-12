@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import '../../public/app.css'
-import '../../public/grid.css'
 import logo from '../../images/HelloPantryRound_T.png'
 import helloPantry from '../../images/helloPantry.png'
 import Login from '../containers/login'
