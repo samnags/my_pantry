@@ -4,6 +4,14 @@
   padding: 0;
 }
 
+a,
+a:hover,
+a:active,
+a:focus,
+a:visited {
+  text-decoration: none;
+}
+
 body {
 
 }
@@ -71,9 +79,10 @@ body {
 
 .header-link:active,
 .header-link:focus,
-.header-link:hover {
+.header-link:hover,
+.header-link:visited{
   text-decoration: none;
-  /*color: rgb(255, 255, 255);*/
+  color: rgb(255, 255, 255);
 }
 
 
@@ -120,6 +129,15 @@ a.button:hover {
   color: rgb(237, 126, 110);
   font-size: 40px;
   padding: 25px;
+}
+
+.pantryname a {
+  color: rgb(237, 126, 110);
+}
+
+
+.pantryname a:hover {
+  color: #1bbcc4;
 }
 
 .updated {
