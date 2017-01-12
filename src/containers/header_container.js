@@ -55,33 +55,6 @@ class LoggedInHeader extends Component {
       </div>
     )
 
-
-
-
-      // <div>
-      // <Navbar className="main">
-      //   <Navbar.Header>
-      //     <Navbar.Brand>
-      //       <Link to='/home'>My Pantry</Link>
-      //     </Navbar.Brand>
-      //   </Navbar.Header>
-      //   <Nav>
-      //     <LinkContainer to='/newpantry'>
-      //       <NavItem>Add a Pantry</NavItem>
-      //     </LinkContainer>
-      //     <IndexLinkContainer to='/'>
-      //       <NavItem onClick={this.logout}>Log Out</NavItem>
-      //     </IndexLinkContainer>
-      //   </Nav>
-      // </Navbar>
-      //
-      // <Navbar className="sub">
-      //   <Nav>
-      //     {this.renderPantries()}
-      //   </Nav>
-      // </Navbar>
-      // </div>
-
   }
 }
 

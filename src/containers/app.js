@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import '../../public/app.css'
 import '../../public/grid.css'
-import LoggedInHeader from '../components/logged_in_header'
+import LoggedInHeader from '../containers/logged_in_header'
 import GuestHeader from '../components/guest_header'
 
 class App extends Component {

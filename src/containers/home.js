@@ -1,15 +1,10 @@
 import React, { Component} from 'react'
 import GuestHeader from '../components/guest_header'
-import LoggedInHeader from '../components/logged_in_header'
+import LoggedInHeader from '../containers/logged_in_header'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { fetchPantries } from '../actions/pantry'
-import PantryCard from './pantry_card'
-import '../../public/app.css'
-import '../../public/home.css'
-import '../../public/grid.css'
-
-
+import PantryCard from '../components/pantry_card'
 
 class Home extends Component {
   componentWillMount() {

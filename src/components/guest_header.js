@@ -1,5 +1,4 @@
 import React from 'react'
-import { Navbar, Nav, NavItem } from 'react-bootstrap'
 import { Link } from 'react-router'
 import logo from '../../images/HelloPantryRound_T.png'
 
@@ -17,7 +16,7 @@ const Header = () => {
             <Link className="header-link" to='/signup'>SIGN UP</Link>
         </div>
       </div>
-    </div>    
+    </div>
   )
 }
 

@@ -4,7 +4,7 @@ import { fetchPantry } from '../actions/pantry'
 import { toggleAddIngredientForm } from '../actions/ingredient'
 import EditIngredient from './edit_ingredient'
 import NewIngredient from './new_ingredient'
-import IngredientTable from './ingredient_table'
+import IngredientTable from '../components/ingredient_table'
 import { fetchPantryIngredients, fetchIngredient } from '../actions/ingredient'
 import { Button } from 'react-bootstrap'
 

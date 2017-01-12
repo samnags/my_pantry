@@ -4,8 +4,8 @@ import '../../public/app.css'
 import '../../public/grid.css'
 import logo from '../../images/HelloPantryRound_T.png'
 import helloPantry from '../../images/helloPantry.png'
-import Login from '../components/login'
-import SignUp from '../components/sign_up'
+import Login from '../containers/login'
+import SignUp from '../containers/sign_up'
 
 class HomeScreen extends Component {
   constructor() {
