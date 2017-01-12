@@ -41,11 +41,12 @@ body {
 
 .header-logo {
   width: 50%;
-  float: left;
+  /*float: left;*/
 }
 
 .header {
   background-color: #ed7e6e;
+  /*height: 95px*/
 }
 
 .header-link {
