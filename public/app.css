@@ -8,6 +8,14 @@ body {
 
 }
 
+.chalkboard {
+  font-family: "Chalkboard SE";
+}
+
+.pink {
+  color: rgb(237, 126, 110);
+}
+
 .homepage {
   background-color: #ed7e6e;
   position: fixed;
@@ -99,6 +107,24 @@ a.button:hover {
 
 .pantrycard {
   padding: 10px;
+  border: 4px;
+  border-style: solid;
+  border-color: rgb(237, 126, 110);
+  margin: 10px;
+  width: 25%;
+  text-align:center
+}
+
+.pantryname {
+  font-family: "Studio Lettering";
+  color: rgb(237, 126, 110);
+  font-size: 40px;
+  padding: 25px;
+}
+
+.updated {
+  text-align: right;
+  font-size: 18px;
 }
 
 @media only screen and (max-width: 500px) {
