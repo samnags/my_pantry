@@ -35,7 +35,7 @@ class HomeScreen extends Component {
 
   render() {
     return (
-      <div>
+      <div className="homepage">
         <div className="section group">
           <div className="row">
             <div className="col span-1-of-2">
