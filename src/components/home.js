@@ -24,8 +24,7 @@ class Home extends Component {
       }
 
     return(
-      <div>
-        {this.props.logged_in ? <LoggedInHeader /> : <GuestHeader /> }
+      <div>      
         {this.props.children}
         {pantries}
       </div>
