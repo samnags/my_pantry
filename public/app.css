@@ -49,6 +49,10 @@ body {
   /*height: 95px*/
 }
 
+.section.group.header {
+    margin-bottom: 20px
+}
+
 .header-link {
   font-family: "Chalkboard SE";
   text-decoration: none;
@@ -91,6 +95,10 @@ a.button:active,
 a.button:focus,
 a.button:hover {
   text-decoration: none;
+}
+
+.pantrycard {
+  padding: 10px;
 }
 
 @media only screen and (max-width: 500px) {
